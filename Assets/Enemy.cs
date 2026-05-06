@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class Enemy : MonoBehaviour
 {
+    public GameObject lose;
     public Transform player;
     [SerializeField]private NavMeshAgent agent;
 
@@ -15,6 +16,14 @@ public class Enemy : MonoBehaviour
         if (player != null)
         {
             agent.SetDestination(player.position);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            lose.SetActive(true);
         }
     }
 }

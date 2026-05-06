@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CAr : MonoBehaviour
 {
+    public GameObject lose;
     public float speed = 5f;
     public float distance = 5f;
     public Rigidbody rb;
@@ -29,6 +30,14 @@ public class CAr : MonoBehaviour
         else if (rb.position.z <= minZ)
         {
             direction = 1;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            lose.SetActive(true);
         }
     }
 }
