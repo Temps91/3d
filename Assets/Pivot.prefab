@@ -50,6 +50,7 @@ MonoBehaviour:
   speed: 50
   maxAngle: 45
   minAngle: -45
+  flipped: 0
 --- !u!1 &6734371364766163882
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,6 +63,7 @@ GameObject:
   - component: {fileID: 1589336090677832664}
   - component: {fileID: 2440779336328893592}
   - component: {fileID: 86294839450271462}
+  - component: {fileID: 2959484542990733272}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -164,3 +166,16 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &2959484542990733272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6734371364766163882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e95c0eabd2d8d545a91a2c467869839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Muerteeee
+  Perder: {fileID: 0}

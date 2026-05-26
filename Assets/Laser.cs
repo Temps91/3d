@@ -45,4 +45,5 @@ public class Laser : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, angle);
         }
     }
+
 }
